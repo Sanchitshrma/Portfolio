@@ -1,7 +1,4 @@
 
-
----
-
 **Portfolio Overview:**
 
 Welcome to the online portfolio of **Sanchit Sharma**, a passionate and dedicated full-stack web developer. This portfolio showcases a range of projects and technical expertise in HTML, CSS, and JavaScript. The design is clean, modern, and user-friendly, reflecting Sanchit's proficiency in creating responsive, interactive web applications.
@@ -14,6 +11,4 @@ Welcome to the online portfolio of **Sanchit Sharma**, a passionate and dedicate
 Explore the site to learn more about Sanchit's skills, projects, and the journey as a full-stack developer. You can also get in touch for collaborations or job opportunities.
 
 **Link:** [www.sanchitsharma.tech](http://www.sanchitsharma.tech)
-
----
 
