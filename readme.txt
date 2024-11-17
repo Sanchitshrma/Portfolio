@@ -8,6 +8,3 @@ Welcome to the online portfolio of **Sanchit Sharma**, a passionate and dedicate
 - **Showcase of Projects:** The portfolio highlights various web development projects, demonstrating expertise in front-end and back-end development using the MERN stack.
 
 Explore the site to learn more about Sanchit's skills, projects, and the journey as a full-stack developer. You can also get in touch for collaborations or job opportunities.
-
-**Link:** [www.sanchitsharma.tech](http://www.sanchitsharma.tech)
-
