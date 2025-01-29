@@ -342,17 +342,48 @@
 
 // crousal
 
-let currentIndex = 0;
-const items = document.querySelectorAll(".carousel-item");
-const totalItems = items.length;
+// let currentIndex = 0;
+// const items = document.querySelectorAll(".carousel-item");
+// const totalItems = items.length;
 
-function moveCarousel() {
-  currentIndex = (currentIndex + 1) % totalItems;
-  const offset = currentIndex * -100; // Adjust offset for each item
-  document.querySelector(
-    ".carousel-container"
-  ).style.transform = `translateX(${offset}%)`;
-}
+// function moveCarousel() {
+//   currentIndex = (currentIndex + 1) % totalItems;
+//   const offset = currentIndex * -100; // Adjust offset for each item
+//   document.querySelector(
+//     ".carousel-container"
+//   ).style.transform = `translateX(${offset}%)`;
+// }
 
-// Move the carousel every 3 seconds
-setInterval(moveCarousel, 3000);
+// // Move the carousel every 3 seconds
+// setInterval(moveCarousel, 3000);
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const track = document.querySelector(".carousel-track");
+//   const items = document.querySelectorAll(".carousel-item");
+
+//   // Duplicate items for infinite scroll effect
+//   items.forEach((item) => {
+//     const clone = item.cloneNode(true);
+//     track.appendChild(clone);
+//   });
+
+//   // Pause animation on hover
+//   track.addEventListener("mouseenter", () => {
+//     track.style.animationPlayState = "paused";
+//   });
+
+//   track.addEventListener("mouseleave", () => {
+//     track.style.animationPlayState = "running";
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".carousel-track");
+  const items = [...document.querySelectorAll(".carousel-item")];
+
+  // Clone items to create an infinite loop effect
+  items.forEach((item) => {
+    const clone = item.cloneNode(true);
+    track.appendChild(clone);
+  });
+});

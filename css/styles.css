@@ -4252,35 +4252,90 @@ img.u-pull-left {
 /* crousal  */
 
 .carousel {
-  position: relative;
-  max-width: 100%; /* Adjust as needed */
-  margin: auto;
+  width: 100vw; /* Full width */
   overflow: hidden;
-  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c; /* Custom dark background */
+  padding: 30px 0;
 }
 
 .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
   display: flex;
-  transition: transform 0.5s ease;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 50px; /* More spacing between icons */
+  animation: scroll 15s linear infinite; /* Smooth infinite scrolling */
+  white-space: nowrap;
 }
 
 .carousel-item {
   display: flex;
-  min-width: 100%; /* Each item takes full width */
-  align-items: center;
+  gap: 50px;
+  flex-shrink: 0;
 }
 
 .carousel-item img {
-  width: 80px; /* 4 images at a time */
-  height: 80px;
-  margin: auto;
+  width: 90px; /* Slightly larger icons */
+  height: 90px;
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(1.5); /* Better visibility */
 }
 
-@keyframes slide {
-  0% {
+.carousel-item img:hover {
+  transform: scale(1.2);
+  filter: brightness(2);
+}
+
+@keyframes scroll {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-100%);
-  }
+  } /* Continuous effect */
+}
+
+/* Duplicate carousel content for seamless looping */
+.carousel-track::after {
+  content: "";
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+/* skills */
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+  font-family: "Playfair Display", serif; /* Matching font */
+  font-size: 30px; /* Increased font size */
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.skill-item {
+  line-height: 1.8;
+  border-left: 5px solid #ffffff;
+  padding-left: 15px;
+}
+
+.skill-item strong {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.skill-item i {
+  font-style: italic;
+  font-weight: 500;
 }
